@@ -90,7 +90,7 @@ const PageCheckout: FC<InterfaceCheckoutProps> = ({
             }),
             {
                 loading: "Paying...",
-                success: "Success",
+                success: "Payment Success",
                 error: "Something went wrong",
             }
         )
