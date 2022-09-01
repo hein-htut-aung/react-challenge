@@ -13,6 +13,7 @@ import {
     formatCardNumber,
     formatCardExpiry,
 } from "creditcardutils"
+import PaymentInput from "@components/elements/PaymentInput"
 
 // Styled Elements
 import {
@@ -162,13 +163,11 @@ const CheckoutForm: FC<CheckoutFormProps> = ({
                                 Card information
                             </FieldLabel>
 
-                            <Input
-                                {...register.input({
-                                    name: "card_number",
-                                    onChange: formatter.cardNumber,
-                                })}
-                                type="text"
-                                placeholder="1234 1234 1234 1234"
+                            <PaymentInput
+                              {...register.input({
+                                name: "card_number",
+                                onChange: formatter.cardNumber,
+                              })}
                             />
                         </FieldControl>
 
